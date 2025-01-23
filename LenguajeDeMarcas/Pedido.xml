@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+    <articulo nombre="Lápiz" marca="A" color="Negro" unidades="30"/>
+    <articulo nombre="Bloc" marca="B" color="Azul" unidades="20"/>
+    <articulo nombre="Bolígrafo" marca="C" color="Verde" unidades="40"/>
+    <articulo nombre="Bolígrafo" marca="D" color="Negro" unidades="20"/>
+</pedido>
+
+
+
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad1 Tarea1</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url("pexels-raulling-29326407.jpg"); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Roboto', sans-serif; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+            text-align: center;
+            padding: 20px 20px; /* Márgenes laterales (izquierda y derecha) */
+            margin-bottom: 20px; /* Espacio inferior a los botones */
+        }
+        h1 {
+            color: rgb(255, 2, 2);
+            text-align: center;
+            padding-top: 40px;
+            font-size: 4rem;
+        }
+
+        h2 {
+            color: rgb(255, 255, 255);
+            text-align: justify;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-size: 2rem;
+        }
+
+        button {
+            color: rgb(255, 254, 254);
+            background-color: brown;
+            font-size: larger;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 20px; /* Espacio inferior a los botones */
+            }
+        
+        /* Estilos para los botones */
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Coloca los botones en columna */
+            gap: 5 px; /* Espacio entre los botones */
+            margin-top: 20px; /* Espacio superior a los botones */
+            margin-bottom: 20px; /* Espacio inferior a los botones */
+        }
+
+        button:hover {
+            background-color: darkred; 
+        }
+        
+        .highlight {
+            background-color: rgba(255, 255, 0, 0.596);
+            transition: background-color 0.5s ease;
+        }
+        </style>
+</head>
+<body>
+    <h1>NORWAY</h1>
+    <div id="formula"><h2>E=mc2</h2></div>
+    <div><h2>    
+        ¿Algún día, entre melancolía y aburrimiento, se ha parado a pensar en que el color dominante en cualquier ciudad es el gris? Calles, zonas industriales, instalaciones de servicio… Si lo miramos desde el cielo, la panorámica es igualmente desoladora: los tejados grises apenas se alternan con los de teja y con el negro de la pizarra característico de regiones como El Bierzo.
+        </div>
+    <div><h2>  
+        En cualquier caso, el pensamiento de cualquier humano al uso se quedaría en esta vacua observación. Pero para Trygve Mongstad, esta idea le llevó al siguiente estadio de la locura, o de la creatividad emprendedora según se prefiera: ocupar ese gris con algo que pueda sernos útil como sociedad.
+    </div>
+    <div><h2>
+        Indaguemos un poco más en el perfil de Mongstad. Noruego, físico de formación, trabajaba en 2012 en un laboratorio de investigación desarrollando nuevos materiales. No tuvo éxito en ese empeño. Ni corto ni perezoso, dio un giro de 180 grados en su vida para dirigir una empresa de cien trabajadores que instalaba paneles solares en Malaui. Su vida siguió dando tumbos: en 2016 volvió a la investigación, para ocuparse como instalador de placas solares en 2017. De los despachos a los tejados, del traje y corbata al mono de trabajo. En 2019, dejó de usar el desatornillador para hacer consultoría de los mejores tejados en que aplicar estas tecnologías. Y, ya sería en 2021, cuando llegamos a su actual aventura, OverEasy Solar, la startup que fundó y que actualmente dirige.</h2>
+    </div>
+    
+    <!-- Contenedor para los botones -->
+    <div class="button-container">
+        <!-- Botón para ver fuente externa -->
+        <a href="https://www.elespanol.com/invertia/disruptores/ecosistema-startup/startups/20241117/startup-noruega-lleno-paneles-solares-verticales-estadio-nacional-noruega-aprovecharse-nieve/899160633_0.html" target="_blank">
+            <button type="button">Ver fuente</button>
+        </a>
+
+        <!-- Botón que sube al primer div -->
+        <a href="#formula" onclick="highlightText()">
+            <button type="button">Volver a la fórmula</button>
+        </a>
+
+        <!-- Botón para enviar correo -->
+        <a href="mailto:prueba@example.com?subject=HTML&cc=supervisor@example.com" target="_blank">
+            <button type="button">Enviar correo</button>
+        </a>
+    </div>
+
+
+    <script>
+        function highlightText() {
+            const formulaDiv = document.getElementById('formula'); 
+            
+            formulaDiv.classList.add('highlight');
+            
+            setTimeout(function() {
+                formulaDiv.classList.remove('highlight');
+            }, 2000); 
+        }
+    </script>
+</body>
+</html>
