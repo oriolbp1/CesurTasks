@@ -13,7 +13,7 @@ public class Combate {
         while (pokemon1.getVida() > 0 && pokemon2.getVida() > 0) {
             atacar(pokemon1, pokemon2);
             if (pokemon2.getVida() <= 0) {
-                System.out.println("🏆 " + pokemon1.getNombre() + " gana el combate!");
+                System.out.println("🏆 " + pokemon1.getNombre() + " gana el combate!!!");
                 break;
             }
 
