@@ -18,7 +18,7 @@ public class Entrenador {
 		this.equipo = new ArrayList<>();
 	}
 	
-	
+
 	public String getNombre() {
 		return nombre;
 	}
